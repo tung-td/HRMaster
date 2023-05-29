@@ -81,6 +81,11 @@ button>i,
     background-color: #FAFAFA;
 }
 
+.card-body.bg-gr:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+}
+
 .card {
     margin: 10px 0px;
 }
@@ -222,7 +227,7 @@ button>i,
 
 .bg-wh>button>i,
 .bg-wh>button {
-    background-color: #fafafa !important;
+    background-color: transparent !important;
 }
 
 .text-muted {
