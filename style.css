@@ -50,7 +50,7 @@
     text-decoration: unset;
 }
 
-.ti-bell {
+#noti>.ti-bell {
     font-size: 24px;
 }
 
@@ -120,8 +120,8 @@ button>i,
 }
 
 .drop_item>a {
-    background-color: #081226;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     text-decoration: unset !important;
     padding: 8px 15px 8px 15px;
     width: 100%;
@@ -133,19 +133,28 @@ button>i,
 }
 
 .drop_item>a:hover {
-    background-color: #fff;
-    color: #081226 !important;
+    background-color: #D8D8D8;
+    color: #000 !important;
 }
 
 .sidebar>.si_item:hover>a,
 .sidebar>.si_item:hover {
-    background-color: #081226;
-    color: #f1f2f3 !important;
+    background-color: #D8D8D8;
+    color: #000 !important;
 }
 
-.si_item.dropdown:hover>.drop_item>a,
-.si_item.dropdown:hover>.drop_item {
-    display: block;
+.drop_item {
+    display: none;
+}
+
+.si_item.dropdown {
+    margin-bottom: 186px;
+}
+
+.drop_item.show,
+.drop_item.show > a
+{
+    display: block !important;
 }
 
 .co_item {
@@ -203,19 +212,17 @@ button>i,
 
 .si_item.active>a,
 .si_item.active {
-    background-color: #081226;
-    color: #fff !important;
+    background-color: #D8D8D8;
+    color: #000 !important;
     cursor: pointer;
 }
 
 .drop_item_active {
-    background-color: #fff !important;
-    color: #081226 !important;
 }
 
-.bg-wh > button > i,
-.bg-wh > button{
-    background-color:#fafafa !important;
+.bg-wh>button>i,
+.bg-wh>button {
+    background-color: #fafafa !important;
 }
 
 .text-muted {

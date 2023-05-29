@@ -52,15 +52,21 @@
                         <span> Dashboard</span>
                     </a>
                 </div>
-                <div class="si_item active dropdown">
+                <div id="topDropdown" class="si_item" onclick="dropDown()">
                     <i class="ti-user"></i>
                     <span> Information</span>
 
-                    <div class="drop_item">
+                    <div id="myDropdown" class="drop_item active">
                         <a href="./earning.html" class="drop_item_active"><span>Total Earnings</span></a>
                         <a href="./vacation.html"><span>Total Vacation Days</span></a>
                         <a href="./average.html"><span>Average Benefits</span></a>
                     </div>
+                </div>
+                <div class="si_item">
+                    <a href="alert.html">
+                        <i class="ti-bell"></i>
+                        <span> Alert</span>
+                    </a>
                 </div>
             </div>
             <div class="body_content">
@@ -242,6 +248,7 @@
     </div>
 
 
+    <script src="./index.js"></script>
     <script src="./chart.js"></script>
 
     <script>
