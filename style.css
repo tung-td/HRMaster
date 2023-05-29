@@ -212,3 +212,12 @@ button>i,
     background-color: #fff !important;
     color: #081226 !important;
 }
+
+.bg-wh > button > i,
+.bg-wh > button{
+    background-color:#fafafa !important;
+}
+
+.text-muted {
+    font-size: 14px;
+}
