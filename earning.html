@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>HR MASTER</title>
+</head>
+
+<body>
+    <div class="" style="width: 100%;">
+        <div class="header">
+            <div class="hd_item">
+                <a href="index.html" id="logo">HRMaster</a>
+            </div>
+            <div class="hd_item hd_search">
+                <form class="form-inline">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="ti-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="hd_item">
+                <button id="noti" href="">
+                    <i class="ti-bell"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="body_con">
+            <div class="sidebar">
+                <div class="si_item">
+                    <a href="index.html">
+                        <i class="ti-home"></i>
+                        <span> Dashboard</span>
+                    </a>
+                </div>
+                <div class="si_item active dropdown">
+                    <i class="ti-user"></i>
+                    <span> Information</span>
+
+                    <div class="drop_item">
+                        <a href="./earning.html" class="drop_item_active"><span>Total Earnings</span></a>
+                        <a href="./vacation.html"><span>Total Vacation Days</span></a>
+                        <a href="./average.html"><span>Average Benefits</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="body_content">
+                <div class="co_item chart">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Search Table</h2>
+
+                                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                                    <br>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="dropdown_filter">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Shareholder Name
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">All</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="dropdown_filter">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Gender
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Male</a></li>
+                                                                <li><a class="dropdown-item" href="#">Female</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="dropdown_filter">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Ethnicity
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">All</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="dropdown_filter">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Type
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Full time</a></li>
+                                                                <li><a class="dropdown-item" href="#">Part time</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="dropdown_filter">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Total Earnings
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">0-1000$</a></li>
+                                                                <li><a class="dropdown-item" href="#">1000$-5000$</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">&gt; 5000$</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="myTable">
+                                            <tr>
+                                                <td>John</td>
+                                                <td>Male</td>
+                                                <td>Kinh</td>
+                                                <td>Full time</td>
+                                                <td>12.000$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mary</td>
+                                                <td>Female</td>
+                                                <td>Kinh</td>
+                                                <td>Full time</td>
+                                                <td>4000$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Female</td>
+                                                <td>Kinh</td>
+                                                <td>Part time</td>
+                                                <td>500$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anja</td>
+                                                <td>Male</td>
+                                                <td>Kinh</td>
+                                                <td>Part time</td>
+                                                <td>600$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anna</td>
+                                                <td>Female</td>
+                                                <td>Kinh</td>
+                                                <td>Part time</td>
+                                                <td>100$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lewis</td>
+                                                <td>Male</td>
+                                                <td>Kinh</td>
+                                                <td>Full time</td>
+                                                <td>1200$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nim</td>
+                                                <td>Female</td>
+                                                <td>Kinh</td>
+                                                <td>Part time</td>
+                                                <td>300$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ande</td>
+                                                <td>Male</td>
+                                                <td>Kinh</td>
+                                                <td>Part time</td>
+                                                <td>200$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rito</td>
+                                                <td>Female</td>
+                                                <td>Kinh</td>
+                                                <td>Full time</td>
+                                                <td>1000$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card co_item announcement">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <canvas id="myChart" style="max-height: 400px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="./chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        const data = {
+            labels: [
+                '0-100$',
+                '100-500$',
+                '500-1000$',
+                '1000-2000$',
+                '>2000$'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [1, 3, 2, 1, 2],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    '#3dcc4a',
+                    '#d77fcc',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const config = {
+            type: 'doughnut',
+            data: data,
+        };
+
+        new Chart(ctx, config);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
